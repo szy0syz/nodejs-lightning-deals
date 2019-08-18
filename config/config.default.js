@@ -18,6 +18,15 @@ module.exports = appInfo => {
   // add your middleware config here
   config.middleware = [];
 
+  config.redis = {
+    client: {
+      port: 6379,
+      host: '127.0.0.1',
+      password: '',
+      db: 0,
+    },
+  };
+
   // add your user config here
   const userConfig = {
     // myAppName: 'egg',
